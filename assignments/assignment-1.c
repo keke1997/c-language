@@ -13,3 +13,23 @@
 // Enter a number: 75.2295
 // Enter a number: 0
 // The largest number entered was l00.62
+#include<stdio.h>
+
+int main()
+{
+    double number = 0, largest = 0; 
+    for(;;)
+    {
+        printf("Enter the number:");
+        scanf("%lf", &number);
+       
+        if(number <= 0)
+           break; 
+ 
+        if(number > largest)
+           largest = number; 
+    }
+    printf("\nThe largest number is %g\n", largest);
+   
+    return 0;
+}
