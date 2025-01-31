@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.sqlbook": "sql",
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
+        "*.embeddedhtml": "html",
+        ".fantomasignore": "ignore",
+        "*.py": "python",
+        "stdlib.h": "c",
+        "ctype.h": "c",
+        "stdbool.h": "c"
+    }
+}

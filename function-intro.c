@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Function Declaration
+
 // Compare two number and return the greater number.
 int max(int a, int b);
 
@@ -21,7 +23,7 @@ int main()
 
     return 0;
 }
-
+//Function Definitions
 // a,b => function parameters
 int max(int a, int b)
 {
