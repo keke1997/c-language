@@ -6,6 +6,33 @@
 void bubble_sort(int array[], size_t size)
 {
     // Implement here
+    // Loop through the array multiple times
+     bool swapped;
+     
+    for (size_t i = 0; i < size - 1; ++i)
+    {
+        swapped = false; // Flag to track if any swap happened in this pass
+        
+        // Inner loop to compare adjacent elements
+        for (size_t j = 0; j < size - i - 1; ++j)
+        {
+            if (array[j] > array[j + 1])
+            {
+                // Swap elements if they are in the wrong order
+                int temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
+                swapped = true;
+            }
+        }
+        
+        // If no elements were swapped, the array is already sorted
+        if (!swapped)
+        {
+            break;
+        }
+    }
+
 }
 
 void test_bubble_sort();
