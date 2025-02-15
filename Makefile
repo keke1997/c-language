@@ -15,3 +15,22 @@ pointer-arg-return: pointer-arg-return.c
 
 clean: 
 	rm *.exe
+	gcc -o ass1.exe bubble-sort.c
+	//  int i, j;
+    // bool swapped;
+    // for (i = 0; i < size - 1; i++) {
+    //     swapped = false;
+    //     for (j = 0; j < size - i - 1; j++) {
+    //         if (array[j] > array[j + 1]) {
+    //             swap(&array[j], &array[j + 1]);
+    //             swapped = true;
+    //         }
+    //     }
+
+    //     // If no two elements were swapped by inner loop,
+    //     // then break
+    //     if (swapped == false)
+    //         break;
+    // }
+    ./ass1.exe
+    gcc -o ass1.exe day-of-year.c
